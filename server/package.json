@@ -7,7 +7,8 @@
     "express": "^4.16.4"
   },
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "lint": "eslint ."
   },
   "devDependencies": {
     "eslint": "^5.9.0",
