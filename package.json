@@ -11,11 +11,12 @@
   "scripts": {
     "install": "(cd client && npm install) && (cd server && npm install)",
     "start": "concurrently \"cd client && PORT=3000 npm run start\" \"cd server && PORT=3001 npm run start\"",
-    "lint:dev": "(cd client && npm run lint)"
+    "lint:dev": "(cd client && npm run lint)",
+    "test:dev": "(cd client && npm run test)"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:dev"
+      "pre-commit": "npm run lint:dev && npm run test:dev"
     }
   },
   "devDependencies": {
