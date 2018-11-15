@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Server Running');
-})
+  res.send('Response');
+});
 
-app.listen(3001, () => console.log('Server is running'));
+app.listen(9000, () => console.log('Running in 9000')); //eslint-disable-line
